@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us | Dhanvantari Clinic Dehradun</title>
+  <meta name="description" content="Contact Dhanvantari Clinic in Athoorwala, Dehradun. Schedule an appointment with Dr. Debajyoti Banerjee for expert pediatric and neonatal care.">
+  <link rel="icon" href="assets/images/Logo.png">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- Floating Action Buttons -->
+  <div class="floating-actions">
+    <a href="https://wa.me/918173850758" target="_blank" class="float-btn float-wa" aria-label="WhatsApp Us">
+      <i class="fab fa-whatsapp"></i>
+    </a>
+    <a href="tel:+918173850758" class="float-btn float-call" aria-label="Call Us">
+      <i class="fas fa-phone"></i>
+    </a>
+  </div>
+
+  <!-- Header -->
+  <header>
+    <div class="container header-container">
+      <a href="index.html" class="logo">
+        <img src="assets/images/Logo.png" alt="Dhanvantari Clinic Logo">
+        <div class="logo-text">
+          <h1>Dhanvantari Clinic</h1>
+          <p>डॉ. देवज्योति बैनर्जी</p>
+        </div>
+      </a>
+      <nav>
+        <div class="hamburger">
+          <i class="fas fa-bars"></i>
+        </div>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="contact.html" style="color: var(--cta-color);">Contact Us</a></li>
+          <li><a href="contact.html" class="btn btn-cta">Book Appointment</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Page Header -->
+  <div class="page-header">
+    <div class="container">
+      <h1>Contact Us</h1>
+      <p>We are here to help your child thrive. Get in touch with us today.</p>
+    </div>
+  </div>
+
+  <section class="section-padding" style="background: #FAFAFA;">
+    <div class="container contact-wrapper">
+      
+      <!-- Contact Information -->
+      <div class="contact-info">
+        <h2>Get in Touch</h2>
+        <p style="margin-bottom: 2rem; color: #666;">We welcome your questions. Schedule a consultation or simply reach out for inquiries regarding our services.</p>
+        
+        <div style="margin-bottom: 1.5rem; display:flex; gap:15px;">
+          <div style="color:var(--cta-color); font-size:1.5rem;"><i class="fas fa-map-marker-alt"></i></div>
+          <div>
+            <h4 style="margin-bottom:0.2rem;">Clinic Location</h4>
+            <p style="color:#555;">Shaheed Dwar Road, Chowk No. 1, Athoorwala, Dehradun – 248140, Uttarakhand, India</p>
+            <a href="https://maps.google.com/?q=Shaheed+Dwar+Road,+Chowk+No.+1,+Athoorwala,+Dehradun" target="_blank" style="color:var(--cta-color); font-weight:600; display:inline-block; margin-top:0.5rem;"><i class="fas fa-directions"></i> Get Directions</a>
+          </div>
+        </div>
+        
+        <div style="margin-bottom: 1.5rem; display:flex; gap:15px;">
+          <div style="color:var(--cta-color); font-size:1.5rem;"><i class="fas fa-phone-alt"></i></div>
+          <div>
+            <h4 style="margin-bottom:0.2rem;">Phone Numbers</h4>
+            <p><a href="tel:+918173850758" style="color:#555;">8173850758</a></p>
+            <p><a href="tel:+917668378751" style="color:#555;">7668378751</a></p>
+            <p><a href="tel:+916395454071" style="color:#555;">63954 54071</a></p>
+          </div>
+        </div>
+
+        <div style="margin-bottom: 1.5rem; display:flex; gap:15px;">
+          <div style="color:#25D366; font-size:1.5rem;"><i class="fab fa-whatsapp"></i></div>
+          <div>
+            <h4 style="margin-bottom:0.2rem;">WhatsApp Chat</h4>
+            <p><a href="https://wa.me/918173850758" target="_blank" style="color:#555;">Message us on WhatsApp</a></p>
+          </div>
+        </div>
+
+        <div style="margin-top: 2rem; background: var(--primary-bg); padding: 1.5rem; border-radius: 10px;">
+          <h3 style="margin-bottom: 1rem;">OPD Timings</h3>
+          <table class="timings-table">
+            <tr>
+              <td>Monday - Saturday</td>
+              <td>10:30 AM – 2:30 PM<br>7:00 PM – 10:00 PM</td>
+            </tr>
+            <tr>
+              <td>Sunday</td>
+              <td>11:00 AM – 2:00 PM</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+
+      <!-- Contact Form -->
+      <div class="contact-form">
+        <h3 style="margin-bottom: 1.5rem;">Book an Appointment</h3>
+        <form id="contactForm" onsubmit="sendToWhatsApp(event)">
+          <div class="form-group">
+            <label for="name">Parent's Name</label>
+            <input type="text" id="name" name="name" required placeholder="Enter your full name">
+          </div>
+          <div class="form-group">
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone" required placeholder="10-digit mobile number">
+          </div>
+          <div class="form-group">
+            <label for="child_age">Child's Age</label>
+            <input type="text" id="child_age" name="child_age" required placeholder="e.g. 6 Months, 4 Years">
+          </div>
+          <div class="form-group">
+            <label for="message">Message / Reason for Visit</label>
+            <textarea id="message" name="message" rows="4" required placeholder="Briefly describe the issue or service needed"></textarea>
+          </div>
+          <button type="submit" class="btn btn-cta" style="width: 100%;">Submit Request</button>
+        </form>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Google Map Embed -->
+  <section>
+    <div class="map-container">
+      <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3448.971946894451!2d78.1189423150537!3d30.179346981827476!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39092994c653f29b%3A0xf6aeb11b1574044b!2sAthoorwala%2C%20Bhania%20Wala%2C%20Uttarakhand%20248140!5e0!3m2!1sen!2sin!4v1683220473852!5m2!1sen!2sin" 
+        allowfullscreen="" 
+        loading="lazy" 
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <div class="logo" style="margin-bottom: 1rem;">
+            <img src="assets/images/Logo.png" alt="Logo">
+            <h4 style="margin:0; color:white; font-family:var(--font-heading);">Dhanvantari Clinic</h4>
+          </div>
+          <p>Vistapith, Athoorwala's first Specialised Neonatal & Pediatric Clinic.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <a href="index.html">Home</a>
+          <a href="about.html">About Us</a>
+          <a href="services.html">Services</a>
+          <a href="blog.html">Blog</a>
+        </div>
+        <div class="footer-col">
+          <h4>Contact Information</h4>
+          <p><i class="fas fa-map-marker-alt"></i> Shaheed Dwar Road, Athoorwala, Dehradun</p>
+          <p><i class="fas fa-phone"></i> 8173850758</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Dhanvantari Clinic. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/script.js"></script>
+  <script>
+    function sendToWhatsApp(event) {
+      event.preventDefault();
+      const name = document.getElementById('name').value;
+      const phone = document.getElementById('phone').value;
+      const childAge = document.getElementById('child_age').value;
+      const message = document.getElementById('message').value;
+      
+      const text = "*New Appointment Request*\n\n*Name:* " + name + "\n*Phone:* " + phone + "\n*Child's Age:* " + childAge + "\n*Message:* " + message;
+      
+      const whatsappUrl = "https://wa.me/918173850758?text=" + encodeURIComponent(text);
+      window.open(whatsappUrl, '_blank');
+    }
+  </script>
+</body>
+</html>
